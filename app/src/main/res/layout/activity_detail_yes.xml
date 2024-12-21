@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--定义帖子详情页-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/arrow_back"
+        android:src="@drawable/arrow_back"
+        />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/delete_red"
+        android:src="@drawable/delete_red" />
+
+    <TextView
+        android:id="@+id/postTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backButton"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:text="@string/post_title" />
+
+    <TextView
+        android:id="@+id/postAuthorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/postTitleTextView"
+        android:padding="16dp"
+        android:text="@string/post_author"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/postContentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postAuthorTextView"
+        android:padding="16dp"
+        android:text="@string/post_content" />
+
+    <TextView
+        android:id="@+id/reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/postContentTextView"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/reply" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/reply">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/add"
+        android:src="@drawable/add_symbol" />
+
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="328dp"
+        android:layout_height="58dp"
+        android:layout_below="@id/recyclerView"
+        android:layout_marginTop="-70dp"
+        android:background="@drawable/edittext_border"
+        android:hint="@string/reply"
+        android:importantForAutofill="no"
+        android:paddingStart="40dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        tools:ignore="TextFields" />
+
+</RelativeLayout>

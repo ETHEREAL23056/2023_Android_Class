@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_posts"
+        android:title="@string/post"
+        android:icon="@drawable/menu"/>
+    <item
+        android:id="@+id/navigation_user"
+        android:title="@string/user"
+        android:icon="@drawable/person" />
+
+</menu>

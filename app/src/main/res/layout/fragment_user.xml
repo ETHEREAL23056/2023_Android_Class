@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--定义用户栏-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background">
+
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/textViewUsername"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="260dp"
+        android:src="@drawable/filter_list"
+        android:importantForAccessibility="no" />
+
+    <Button
+        android:id="@+id/buttonViewCreates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsername"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_border"
+        android:text="@string/my_post"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/buttonViewCreates"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="260dp"
+        android:src="@drawable/edit_black"
+        android:importantForAccessibility="no" />
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_password"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/buttonViewCreates"
+        android:background="@drawable/edittext_border"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/buttonChangePassword"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="260dp"
+        android:src="@drawable/logout"
+        android:importantForAccessibility="no" />
+
+    <Button
+        android:id="@+id/buttonLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@id/buttonChangePassword"
+        android:background="@drawable/edittext_border"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

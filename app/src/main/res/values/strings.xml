@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">My APP</string>
+    <string name="welcome_use">欢迎使用</string>
+    <string name="user_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="start_to_use">开始使用</string>
+    <string name="welcome_register">欢迎注册</string>
+    <string name="app_title">DHU IT HOLLOW</string>
+    <string name="app_description">欢迎来到DHU IT人的树洞\n你可以在这里发表、交流你所想的一切\n尽情发挥吧……</string>
+    <string name="add">添加</string>
+    <string name="post_author">帖子作者</string>
+    <string name="post_content">帖子内容</string>
+    <string name="comment_content">回复内容</string>
+    <string name="post_title">帖子标题</string>
+    <string name="back">返回</string>
+    <string name="reply">回复</string>
+    <string name="reply_title">回复</string>
+    <string name="exit">退出</string>
+    <string name="change_password">修改密码</string>
+    <string name="my_post">我发布的</string>
+    <string name="new_password">新密码：</string>
+    <string name="please_new_password">请输入新密码</string>
+    <string name="please_re_pasword">请重复新密码：</string>
+    <string name="please_re_new_password">请再次输入刚才的密码</string>
+    <string name="please_input_title">请输入标题</string>
+    <string name="please_input_content">请输入内容</string>
+    <string name="launch">发布帖子</string>
+    <string name="post">帖子</string>
+    <string name="user">用户</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="chase_password">找回密码</string>
+    <string name="update">修改</string>
+</resources>

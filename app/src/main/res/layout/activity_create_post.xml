@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--定义帖子创建页面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/chat_background">
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="30dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/arrow_back_black"
+        android:src="@drawable/arrow_back_black"
+        />
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/please_input_title"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/please_input_content"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:scrollbars="vertical"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/launch"
+        android:onClick="onPostButtonClick" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--定义注册界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background">
+
+    <ImageView
+        android:id="@+id/imageViewIconRegister"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hollow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/textViewWelcomeRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_register"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/imageViewIconRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextUsernameRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/user_name"
+        android:background="@drawable/edittext_border"
+        android:paddingStart="40dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/textViewWelcomeRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields" />
+
+    <EditText
+        android:id="@+id/editTextPasswordRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_border"
+        android:paddingStart="40dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@id/editTextUsernameRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:layout_below="@id/editTextPasswordRegister"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_below="@id/buttonRegister"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
